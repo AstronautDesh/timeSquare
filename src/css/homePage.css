@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+.homePage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Asset/backgroundImages/man-wearing-watch.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  .sales-pitch {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+  }
+  .watch-grid{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-box{
+    width: 250px;
+    height: fit-content;
+    padding: .5rem;
+  }
+  
+  .box-grid{
+    display: flex;
+    padding: .3rem;
+  }
+  .box1, .box2{
+    margin:0px .5rem;
+    background-color: rgb(245, 239, 230, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .2rem .1rem rgb(245, 192, 95);
+    border-radius: .3rem;
+    flex: 1;
+  }
+  .rating, .price{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex: 1;
+    color: rgb(53, 1, 1);
+    font-family: var(--fontFamily);
+  }
+  .sales-pitch-text {
+    width: 100%;
+    background-color: rgba(54, 36, 1, 0.5);
+    backdrop-filter: saturate(180%) blur(10px);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    font-family: var(--bodyFont);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .desc{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: .2rem;
+    color: rgb(235, 230, 216);
+    font-family: var(--bodyFont);
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+  }

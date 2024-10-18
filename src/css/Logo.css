@@ -1,0 +1,15 @@
+/* Logo.css */
+.logo {
+    position: fixed;
+    top: .7rem;
+    left: .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    z-index: 999;
+    font-family: var(--fontFamily);
+    color: orange;
+    border: .1rem solid orange;
+    padding: .3rem;
+  }
+  

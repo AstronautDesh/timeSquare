@@ -1,0 +1,171 @@
+/* For screens 600px and below */
+@media only screen and (max-width: 576px) {
+
+  .mens-modern {
+    position: relative;
+    overflow-x: hidden;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-section-A {
+    width: 99%;
+    height: 100%;
+    padding: 1rem 0;
+  }
+
+  .product-section-B {
+    width: 100%;
+    margin-top: 2rem; /* Adds the desired spacing between the sections */
+    padding: 1rem 0;
+  }
+
+  .search-toggle {
+    position: fixed;
+    top: 6rem;
+    color: orange;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .search-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 30;
+  }
+
+  .search-bar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 18%;
+  }
+
+  .search-icon, .close-icon {
+    margin: 0 0.5rem;
+  }
+
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -1rem;
+    width: 100%;
+    height: 700px;
+  }
+
+  .grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .about-heritage {
+    font-size: 1.2rem;
+    padding: .2rem 1rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .filter-container {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  .filter-toggle {
+    background: orange;
+    width: 150px;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+  }
+    
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem); /* Positioned 0.5rem below the toggle */
+    left: 0;
+    background: rgba(250, 176, 38, 0.3); /* Lighter background with transparency */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 999; /* Higher z-index to overlap other elements */
+    width: 100%; /* Ensures the dropdown is the same width as the toggle */
+  }
+  
+  /* Dropdown menu list items */
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+    color: rgb(97, 31, 6);
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+
+
+  .watch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .watch-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  .watch-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .watch-spec {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .watch-image:hover {
+    transform: scale(1.1);
+  }
+}

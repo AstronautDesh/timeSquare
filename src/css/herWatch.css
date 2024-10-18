@@ -1,0 +1,161 @@
+@media only screen and (max-width: 576px) {
+    .herwatch {
+        background-color: rgb(245, 14, 53, .3);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+      
+      /* Search bar styling */
+      .search-bar {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        border: 2px solid black;
+        border-radius: .4rem;
+        background-color: white;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+      }
+      
+      .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+      
+      .search-icon {
+        margin-right: 0.5rem;
+      }
+      
+      .close-icon {
+        cursor: pointer;
+        margin-left: 0.5rem;
+      }
+      
+      /* Search toggle icon */
+      .search-toggle {
+        cursor: pointer;
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        z-index: 20;
+      }
+       /* Filter dropdown styling */
+       .filter-container {
+        position: absolute;
+        top: 25%;
+        left: .5rem;
+        width: 150px;
+        margin: 2rem 0px;
+      }
+      
+      .filter-toggle {
+        background: orange;
+        padding: .5rem;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: pink;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #ccc;
+      }
+      .dropdown-menu li {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      .dropdown-menu li:hover {
+        background-color: #f0f0f0;
+      }
+      .watch-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .2rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+        box-sizing: border-box;
+        box-shadow: .1rem .1rem .2rem rgb(51, 50, 47);
+        margin-top: 10rem;
+      }
+      .watch-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        padding: 0.4rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+      
+      .watch-image:hover {
+        transform: scale(1.1);
+        background-color: #faf6f6;
+      }
+      
+      .watch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* Aligns content neatly */
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .watch-item:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      .watch-spec {
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #333;
+        height: 50px;
+        display: flex;
+        align-items: center; /* Center text vertically */
+        justify-content: center; /* Center text horizontally */
+      }
+      
+      }
+        /* Media queries for responsive grid */
+        @media (min-width: 768px) {
+          .watch-grid {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+        
+        @media (min-width: 1200px) {
+          .watch-grid {
+            grid-template-columns: repeat(6, 1fr);
+          }
+        }

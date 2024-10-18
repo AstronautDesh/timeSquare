@@ -1,0 +1,62 @@
+/* NavMenu.css */
+.chevron-icon {
+    position: fixed;
+    top: 1.9rem;
+    right: .9rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    color: orange;
+  }
+  
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* See-through background */
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontFamily);
+  }
+  .menu-grid{
+    margin-top: 7rem;
+    height: fit-content;
+  }
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .link{
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+  }
+  .link:hover {
+    color: orange;
+  }
+  .nav-links li {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem 0px;
+  }
+  .dropdown-items {
+    list-style: none;
+    padding: 10px 0 0 20px; /* Indent dropdown items */
+  }
+
+  .dropdown-items li {
+    font-size: 1.25rem;
+    color: white;
+  }
+  
+  .dropdown span {
+    color: white;
+    cursor: pointer;
+  }
+  
